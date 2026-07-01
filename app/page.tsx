@@ -159,17 +159,26 @@ export default async function Page({
 						<p className="text-gray-500 mb-10">
 							インストール不要。実際のアプリをそのまま操作できます。
 						</p>
-						<div className="flex justify-center">
+						<div className="flex flex-col items-center gap-6">
 							<iframe
-								src="https://appetize.io/embed/b_stwxqb3jjgkywr3idmntzbh7ka?device=pixel7&osVersion=13.0&scale=75&autoplay=false&orientation=portrait"
-								width="300"
-								height="620"
-								className="rounded-3xl shadow-2xl border-4 border-gray-800"
+								src="https://appetize.io/embed/b_stwxqb3jjgkywr3idmntzbh7ka?device=nexus5&osVersion=11.0&scale=75&autoplay=true&orientation=portrait"
+								width="320"
+								height="640"
+								style={{ border: "none", borderRadius: "24px" }}
+								className="shadow-2xl"
 								title="ケアログAI デモ"
 								allow="clipboard-write"
 							/>
+							<a
+								href="https://appetize.io/app/b_stwxqb3jjgkywr3idmntzbh7ka"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-sm text-emerald-700 underline hover:text-emerald-900"
+							>
+								別タブで開いて試す →
+							</a>
 						</div>
-						<p className="text-xs text-gray-400 mt-6">
+						<p className="text-xs text-gray-400 mt-4">
 							※ デモ版のため通知・課金機能は動作しません
 						</p>
 					</div>
