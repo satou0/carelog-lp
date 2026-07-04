@@ -152,35 +152,31 @@ export default async function Page({
 
 				{/* デモ体験 */}
 				<section className="py-16 px-4 bg-emerald-50">
-					<div className="max-w-4xl mx-auto text-center">
+					<div className="max-w-2xl mx-auto text-center">
 						<h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-							今すぐブラウザで試せます
+							今すぐ無料で試せます
 						</h2>
 						<p className="text-gray-500 mb-10">
-							インストール不要。実際のアプリをそのまま操作できます。
+							インストール不要。ブラウザ上で実際のアプリを操作できます。
 						</p>
-						<div className="flex flex-col items-center gap-6">
-							<iframe
-								src="https://appetize.io/embed/b_stwxqb3jjgkywr3idmntzbh7ka?device=nexus5&osVersion=11.0&scale=75&autoplay=true&orientation=portrait"
-								width="320"
-								height="640"
-								style={{ border: "none", borderRadius: "24px" }}
-								className="shadow-2xl"
-								title="ケアログAI デモ"
-								allow="clipboard-write"
-							/>
+						<div className="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
+							<div className="text-5xl mb-4" aria-hidden="true">📱</div>
+							<p className="text-gray-700 mb-6 leading-relaxed">
+								Android デモアプリを用意しています。<br />
+								記録・タイムライン・AI機能をそのまま体験できます。
+							</p>
 							<a
 								href="https://appetize.io/app/b_stwxqb3jjgkywr3idmntzbh7ka"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-sm text-emerald-700 underline hover:text-emerald-900"
+								className="inline-block bg-emerald-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-colors shadow-md"
 							>
-								別タブで開いて試す →
+								デモを試してみる →
 							</a>
+							<p className="text-xs text-gray-400 mt-4">
+								※ デモ版のため通知・課金機能は動作しません
+							</p>
 						</div>
-						<p className="text-xs text-gray-400 mt-4">
-							※ デモ版のため通知・課金機能は動作しません
-						</p>
 					</div>
 				</section>
 
